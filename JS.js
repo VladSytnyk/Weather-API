@@ -1,6 +1,6 @@
 function f1() {
     let select = document.querySelector('select').value;
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=' + select + '&appid=8b55bac3b6ee537f283a48ba80a2b111')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + select + '&appid=8b55bac3b6ee537f283a48ba80a2b111')
         .then(function (resp) { return resp.json() })
         .then(function (data) {
             console.log(data);
